@@ -1,20 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#f4f4f4"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:onClick="onClick"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.ltg.ltgmvprxjava.view.TabViewpager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_main_parent" />
 
-</android.support.constraint.ConstraintLayout>
+    <RadioGroup
+        android:id="@+id/rg_main_parent"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_main"
+            style="@style/main_tab_bottom"
+            android:checked="true"
+            android:drawableTop="@drawable/main_tab_home_page_selector"
+            android:text="第一" />
+
+        <RadioButton
+            android:id="@+id/rb_project"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/main_tab_home_page_selector"
+            android:text="第二" />
+
+        <RadioButton
+            android:id="@+id/rb_topic"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/main_tab_home_page_selector"
+            android:text="第三" />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/main_tab_home_page_selector"
+            android:text="第四" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/main_tab_home_page_selector"
+            android:text="第五" />
+    </RadioGroup>
+</RelativeLayout>
