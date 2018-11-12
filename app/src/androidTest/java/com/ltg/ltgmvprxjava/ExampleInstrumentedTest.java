@@ -1,4 +1,4 @@
-package mvprxjava.ltg.com.ltgmvprxjava;
+package com.ltg.ltgmvprxjava;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

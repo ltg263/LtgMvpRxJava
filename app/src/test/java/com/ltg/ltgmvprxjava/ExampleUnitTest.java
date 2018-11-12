@@ -1,4 +1,4 @@
-package mvprxjava.ltg.com.ltgmvprxjava;
+package com.ltg.ltgmvprxjava;
 
 import org.junit.Test;
 
